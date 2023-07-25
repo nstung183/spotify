@@ -1,0 +1,114 @@
+{
+  "1": {
+    "stt": 1,
+    "src": "/audio/N1.mp3",
+    "src_image": "/img/music.png",
+    "name": "N1",
+    "author": "Playlist . Tung 1",
+    "duration": 22
+  },
+  "2": {
+    "stt": 2,
+    "src": "/audio/N2.mp3",
+    "src_image": "/img/music.png",
+    "name": "N2",
+    "author": "Playlist . Tung 2",
+    "duration": 22
+  },
+  "3": {
+    "stt": 3,
+    "src": "/audio/N3.mp3",
+    "src_image": "/img/music.png",
+    "name": "N3",
+    "author": "Playlist . Tung 3",
+    "duration": 22
+  },
+  "4": {
+    "stt": 4,
+    "src": "/audio/N4.mp3",
+    "src_image": "/img/music.png",
+    "name": "N4",
+    "author": "Playlist . Tung 4",
+    "duration": 22
+  },
+  "5": {
+    "stt": 5,
+    "src": "/audio/N5.mp3",
+    "src_image": "/img/music.png",
+    "name": "N5",
+    "author": "Playlist . Tung 5",
+    "duration": 22
+  },
+  "6": {
+    "stt": 6,
+    "src": "/audio/N6.mp3",
+    "src_image": "/img/music.png",
+    "name": "N6",
+    "author": "Playlist . Tung 6",
+    "duration": 22
+  },
+  "7": {
+    "stt": 7,
+    "src": "/audio/N7.mp3",
+    "src_image": "/img/music.png",
+    "name": "N7",
+    "author": "Playlist . Tung 7",
+    "duration": 22
+  },
+  "8": {
+    "stt": 8,
+    "src": "/audio/N8.mp3",
+    "src_image": "/img/music.png",
+    "name": "N8",
+    "author": "Playlist . Tung 8",
+    "duration": 22
+  },
+  "9": {
+    "stt": 9,
+    "src": "/audio/N9.mp3",
+    "src_image": "/img/music.png",
+    "name": "N9",
+    "author": "Playlist . Tung 9",
+    "duration": 22
+  },
+  "10": {
+    "stt": 10,
+    "src": "/audio/N10.mp3",
+    "src_image": "/img/music.png",
+    "name": "N10",
+    "author": "Playlist . Tung 10",
+    "duration": 22
+  },
+  "11": {
+    "stt": 11,
+    "src": "/audio/N11.mp3",
+    "src_image": "/img/music.png",
+    "name": "N11",
+    "author": "Playlist . Tung 11",
+    "duration": 22
+  },
+  "12": {
+    "stt": 12,
+    "src": "/audio/N12.mp3",
+    "src_image": "/img/music.png",
+    "name": "N12",
+    "author": "Playlist . Tung 12",
+    "duration": 22
+  },
+  "13": {
+    "stt": 13,
+    "src": "/audio/N13.mp3",
+    "src_image": "/img/music.png",
+    "name": "N13",
+    "author": "Playlist . Tung 13",
+    "duration": 22
+  },
+  "14": {
+    "stt": 14,
+    "src": "/audio/N14.mp3",
+    "src_image": "/img/music.png",
+    "name": "N14",
+    "author": "Playlist . Tung 14",
+    "duration": 22
+  }
+}

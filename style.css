@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 /* Padding & Margin */
 .p-r-10 {
   padding-right: 10px;
@@ -141,7 +145,6 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-
 
 #playlist .audio {
   display: flex;
@@ -331,4 +334,54 @@ body {
   flex-direction: column;
   display: flex;
   justify-content: space-between;
+}
+
+#head-right img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+#head-right-description {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#head-right-description div:nth-child(1) {
+  display: block;
+}
+
+#head-right-description div:nth-child(2) {
+  margin: auto 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+#body-right div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#body-right div:nth-child(2) {
+  display: flex;
+}
+
+#body-right div:nth-child(2) div {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#body-right div:nth-child(2) i {
+  padding-right: 20px;
+  margin: auto 0;
+}
+
+#body-right img {
+  width: 70px;
+  height: 70px;
 }
