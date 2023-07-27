@@ -1,12 +1,4 @@
 $(document).ready(function () {
-  $(".audio").on("click", function () {
-    let audio = $(this).find("audio")[0];
-    if (audio.paused == false) {
-      audio.pause();
-    } else {
-      audio.play();
-    }
-  });
   function playlistMiddle() {
     let playlistBody = "";
     $.getJSON("/audio/audio.json", function (result) {
@@ -18,7 +10,7 @@ $(document).ready(function () {
               <audio class="hide player_audio" src="${audio["src"]}"></audio>
               <img src="${audio["src_image"]}" alt="music">
               <div class="description">
-                <h3 class="playing">${audio["name"]}</h3>
+                <h3>${audio["name"]}</h3>
                 <p>${audio["author"]}</p>
               </div>
             </div>
@@ -36,10 +28,10 @@ $(document).ready(function () {
       $.each(result, function (i, audio) {
         playlistBody += `<div class="audio playing">
           <audio class="hide player_audio" src="${audio["src"]}"></audio>
-          <img src="/img/music.png" alt="music">
+          <img src="${audio["src_image"]}" alt="music">
           <div class="audio-description">
             <div class="description">
-              <h3 class="playing">${audio["author"]}</h3>
+              <h3>${audio["author"]}</h3>
               <p>${audio["author"]}</p>
             </div>
              <i class="fal fa-volume hide"></i>
@@ -48,8 +40,37 @@ $(document).ready(function () {
       });
       $("#playlist").html(playlistBody);
     });
-    $.getJSON("/audio/audio.json");
   }
   playlistLeft();
   playlistMiddle();
+});
+
+$(document).on("click", ".audio", function () {
+  let audio = $(this).find("audio")[0];
+  let audioImg = $(this).find("img")[0].src;
+  if (audio.paused == false) {
+    audio.pause();
+    audio.currentTime = 0;
+  } else {
+    changeCurrentAudioImage(audioImg);
+    stopAllAudio();
+    highlightName($(this));;
+    audio.play();
+  }
+
+  function stopAllAudio(){
+    $("audio").each(function () {
+      this.pause();
+      this.currentTime = 0;
+    });
+  }
+
+  function changeCurrentAudioImage(audioImg) {
+    $("#current-audio").find("img")[0].src = audioImg;
+  }
+
+  function highlightName(component) {
+    component.find("h3").addClass("playing");
+    component.find("i").removeClass("hide");
+  }
 });

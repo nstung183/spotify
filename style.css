@@ -236,6 +236,11 @@ body {
   display: flex;
 }
 
+#current-audio img {
+  width: 245px;
+  height: 245px;
+}
+
 #current-audio-descriptions {
   margin: auto 0 0;
   color: var(--white);
