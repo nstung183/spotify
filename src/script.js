@@ -1,6 +1,6 @@
 var jsonAudios;
 $(document).ready(function () {
-  $.getJSON("/audio/audio.json", function (data) {
+  $.getJSON("/public/audio/audio.json", function (data) {
     jsonAudios = data;
   });
 });
