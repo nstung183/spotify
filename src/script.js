@@ -1,6 +1,6 @@
 var jsonAudios;
 $(document).ready(function () {
-  $.getJSON("/public/audio/audio.json", function (data) {
+  $.getJSON("/audio/audio.json", function (data) {
     jsonAudios = data;
   });
 });
@@ -112,6 +112,7 @@ $(document).on("click", ".js--audio-target", function () {
   }
 
   function highlightName(currentAudio) {
+    debugger
     currentAudio.find("h3").addClass("playing");
     currentAudio.find("i").removeClass("hide");
   }
