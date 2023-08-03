@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="#">
   </head>
 
-  <body>
+  <body class="fixed-component">
     <section class="grid-item">
       <div id="head-lelf" class="component-radius section-md">
         <h3 class="active pointer"><i class="fas fa-home p-r-20 p-b-20"></i><strong>Home</strong></h3>
@@ -54,19 +54,19 @@
             <h3 class="pointer"><i class="fas fa-user"></i></h3>
           </div>
         </div>
-        <div id="current-audio">
-          <img src="/img/music.png" alt="" class="p-r-20 p-t-20">
+        <div id="current-audio" class="js--current-audio">
+          <img src="/img/music.png" alt="" class="p-r-20 p-t-20 js--current-audio-img">
           <div id="current-audio-descriptions">
-            <p class="p-t-20">Public Playlist</p>
-            <h3 class="p-t-20">Playlist</h3>
-            <p class="p-t-20">Playlist . Tung 1</p>
+            <p class="p-t-20 ">Public Playlist</p>
+            <h3 class="p-t-20 js--current-audio-name">Playlist</h3>
+            <p class="p-t-20 js--current-audio-author">Playlist . Tung 1</p>
           </div>
         </div>
       </div>
       <div id="body-middle" class="section-md-rbl">
         <div id="current-audio-control">
           <div id="control-left">
-            <i class="fas fa-play-circle"></i>
+            <i id="js--status-audio-control" class="fas fa-play-circle"></i>
             <i class="fas fa-heart"></i>
             <i class="fas fa-arrow-circle-down"></i>
             <i class="fas fa-ellipsis-h"></i>
@@ -100,11 +100,11 @@
     <section class="grid-item section-md component-radius">
       <div id="head-right">
         <h3 class="p-b-20">Playlist</h3>
-        <img src="/img/music.png" alt="music">
+        <img src="/img/music.png" alt="music" class="js--current-audio-img">
         <div id="head-right-description">
           <div>
-            <h3 class="p-b-20">Playlist 1</h3>
-            <h3 class="p-b-20">Playlist 1 . Tung 1</h3>
+            <h3 class="p-b-20 js--current-audio-name">Playlist 1</h3>
+            <h3 class="p-b-20 js--current-audio-author">Playlist 1 . Tung 1</h3>
           </div>
           <div>
             <i class="fas fa-heart p-r-20"></i>
@@ -119,10 +119,10 @@
         </div>
         <div>
           <i class="fal fa-music"></i>
-          <img src="/img/music.png" alt="">
+          <img src="/img/music.png" alt="" class="js--current-audio-img-next">
           <div>
-            <h3 class="playing">Playlist 11</h3>
-            <p>Playlist . Tung 11</p>
+            <h3 class="js--current-audio-name-next">Playlist 11</h3>
+            <p class="js--current-audio-author-next">Playlist . Tung 11</p>
           </div>
         </div>
       </div>
