@@ -1,4 +1,4 @@
-var jsonAudios;
+let jsonAudios;
 $(document).ready(function () {
   $.getJSON("/audio/audio.json", function (data) {
     jsonAudios = data;
@@ -92,7 +92,7 @@ $(document).on("click", ".js--audio-target", function () {
     );
     stopAllAudio();
     removeClassActive(audios);
-    highlightName(currentAudio);
+    highlightName(this.dataset.audioStt);
     changeCurrentAudioDescriptions(this.dataset.audioStt);
     changeCurrentAudioDescriptionsNext(parseInt(this.dataset.audioStt) + 1);
     audio.play();
@@ -111,10 +111,13 @@ $(document).on("click", ".js--audio-target", function () {
     audios.find("i").not(".hide").addClass("hide");
   }
 
-  function highlightName(currentAudio) {
-    debugger
-    currentAudio.find("h3").addClass("playing");
-    currentAudio.find("i").removeClass("hide");
+  function highlightName(stt) {
+    let audios = $(`.js--audio-target*[data-audio-stt=${stt}]`);
+    audios.find("h3").addClass("playing");
+    audios.find("i").removeClass("hide");
+    audios.each(function (i, audio) {
+      audio.scrollIntoView();
+    });
   }
 
   function changeCurrentAudioDescriptions(key) {
